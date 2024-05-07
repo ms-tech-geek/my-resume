@@ -3,9 +3,13 @@ const ExperienceCard = ({ expDetails: { companyInfo, jobInfo } }) => {
     <div
       className="row mt-2"
       style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        padding: '10px 20px',
+        border: '2px solid whitesmoke',
+        borderRadius: '5px',
         backgroundColor: 'whitesmoke',
-        border: '2px solid black',
-        borderRadius: '10px',
       }}
     >
       <div className="col-1" style={{ display: 'flex', alignItems: 'center' }}>
@@ -18,14 +22,17 @@ const ExperienceCard = ({ expDetails: { companyInfo, jobInfo } }) => {
           }}
         />
       </div>
-
       <div className="col-7 row" style={{ alignItems: 'center' }}>
-        <div>{jobInfo.jobTitle}</div>
-        <div>{companyInfo.companyName}</div>
+        <div style={{ fontSize: '16px', fontWeight: 'bold' }}>
+          {jobInfo.jobTitle}
+        </div>
+        <div style={{ fontSize: '14px' }}>{companyInfo.companyName}</div>
       </div>
       <div className="col-4" style={{ textAlign: 'right' }}>
-        <h5>{jobInfo.jobDuration}</h5>
-        <h6>{companyInfo.companyLocation}</h6>
+        <div style={{ fontSize: '16px', fontWeight: 'bold' }}>
+          {jobInfo.jobDuration}
+        </div>
+        <div style={{ fontSize: '14px' }}>{companyInfo.companyLocation}</div>
       </div>
     </div>
   );
