@@ -23,15 +23,13 @@ const ExperienceCard = ({ expDetails: { companyInfo, jobInfo } }) => {
         />
       </div>
       <div className="col-7 row" style={{ alignItems: 'center' }}>
-        <div style={{ fontSize: '16px', fontWeight: 'bold' }}>
-          {jobInfo.jobTitle}
+        <div style={{ fontSize: '16px' }}>{jobInfo.jobTitle}</div>
+        <div style={{ fontSize: '14px', fontWeight: 'bold' }}>
+          {companyInfo.companyName}
         </div>
-        <div style={{ fontSize: '14px' }}>{companyInfo.companyName}</div>
       </div>
       <div className="col-4" style={{ textAlign: 'right' }}>
-        <div style={{ fontSize: '16px', fontWeight: 'bold' }}>
-          {jobInfo.jobDuration}
-        </div>
+        <div style={{ fontSize: '16px' }}>{jobInfo.jobDuration}</div>
         <div style={{ fontSize: '14px' }}>{companyInfo.companyLocation}</div>
       </div>
     </div>
