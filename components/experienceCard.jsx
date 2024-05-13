@@ -1,10 +1,13 @@
 import styles from '@/components/styles.module.scss';
 
-const CompanyLogo = ({ logo, companyName }) => (
+const CompanyLogo = ({ logo, companyName }) => {
+  const logoPath = `./images/${logo}.png`;
+  const logoText = `${companyName} logo`;
+  return(
   <div className={`col-1 ${styles.companyLogoContainer}`}>
-    <img src={`./images/${logo}.png`} alt={`${companyName} logo`} className={styles.companyLogo} />
-  </div>
-);
+    <img src={logoPath} alt={logoText} className={styles.companyLogo} />
+  </div>)
+};
 
 const JobDetails = ({ jobTitle, companyName }) => (
    <div className={`col-7 ${styles.jobDetails}`}>
@@ -20,12 +23,12 @@ const JobDurationLocation = ({ jobDuration, companyLocation }) => (
   </div>
 );
 
-const ExperienceCard = ({ expDetails: { companyInfo, jobInfo } }) => {
+const ExperienceCard = ({ companyLogo, companyName, companyLocation, jobTitle, jobDuration}) => {
   return (
     <div className={`row mt-2 ${styles.expCardBox}`}>
-      <CompanyLogo logo={companyInfo.companyLogo} companyName={companyInfo.companyName} />
-      <JobDetails jobTitle={jobInfo.jobTitle} companyName={companyInfo.companyName}/>
-      <JobDurationLocation jobDuration={jobInfo.jobDuration} companyLocation={companyInfo.companyLocation}/>
+      <CompanyLogo logo={companyLogo} companyName={companyName} />
+      <JobDetails jobTitle={jobTitle} companyName={companyName}/>
+      <JobDurationLocation jobDuration={jobDuration} companyLocation={companyLocation}/>
     </div>
   );
 };
