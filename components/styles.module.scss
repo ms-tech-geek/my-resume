@@ -1,3 +1,7 @@
+.experienceSection {
+  padding: 20px 40px
+}
+
 .expCardBox {
   display: flex;
   justify-content: space-between;
@@ -6,7 +10,6 @@
   border: 2px solid whitesmoke;
   border-radius: 5px;
   background-color: whitesmoke;
-  margin-top: 20px;
 
   .companyLogoContainer {
     display: flex;
@@ -29,8 +32,8 @@
     }
 
     .companyName {
-      font-size: 16px;
-      font-weight: bold;
+      font-size: 18px;
+      font-weight: 400;
     }
   }
 
