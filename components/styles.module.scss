@@ -6,6 +6,7 @@
   border: 2px solid whitesmoke;
   border-radius: 5px;
   background-color: whitesmoke;
+  margin-top: 20px;
 
   .companyLogoContainer {
     display: flex;
@@ -14,7 +15,7 @@
     .companyLogo {
       width: 100%;
       max-width: initial;
-      min-width: 50px;
+      min-width: 60px;
     }
   }
 
@@ -22,11 +23,12 @@
     align-items: center;
 
     .jobTitle {
-      font-size: 16px;
+      font-size: 14px;
+      font-weight: lighter;
     }
 
     .companyName {
-      font-size: 14px;
+      font-size: 16px;
       font-weight: bold;
     }
   }
@@ -35,11 +37,21 @@
     text-align: right;
 
     .jobDuration {
-      font-size: 16px;
+      font-size: 14px;
+    }
+
+    .activeJob {
+      background-color: #f4ddf4;
+      border-radius: 5px;
+      width: fit-content;
+      padding: 2px 5px;
+      color: #683268;
+      display: inline-block;
+      margin-bottom: 5px;
     }
 
     .companyLocation {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 }

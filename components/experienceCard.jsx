@@ -18,7 +18,7 @@ const JobDetails = ({ jobTitle, companyName }) => (
 
 const JobDurationLocation = ({ jobDuration, companyLocation }) => (
   <div className={`col-4 ${styles.jobDurationLocation}`}>
-    <div className={styles.jobDuration}>{jobDuration}</div>
+    <div className={`${styles.jobDuration} ${jobDuration === 'Present' ? styles.activeJob : ''}`}>{jobDuration}</div>
     <div className={styles.companyLocation}>{companyLocation}</div>
   </div>
 );
