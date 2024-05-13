@@ -1,0 +1,45 @@
+.expCardBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+  background-color: whitesmoke;
+
+  .companyLogoContainer {
+    display: flex;
+    align-items: center;
+
+    .companyLogo {
+      width: 100%;
+      max-width: initial;
+      min-width: 50px;
+    }
+  }
+
+  .jobDetails {
+    align-items: center;
+
+    .jobTitle {
+      font-size: 16px;
+    }
+
+    .companyName {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+
+  .jobDurationLocation {
+    text-align: right;
+
+    .jobDuration {
+      font-size: 16px;
+    }
+
+    .companyLocation {
+      font-size: 14px;
+    }
+  }
+}
