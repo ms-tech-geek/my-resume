@@ -25,6 +25,7 @@
     .jobTitle {
       font-size: 14px;
       font-weight: lighter;
+      color: grey;
     }
 
     .companyName {
@@ -38,6 +39,7 @@
 
     .jobDuration {
       font-size: 14px;
+      font-weight: lighter;
     }
 
     .activeJob {
@@ -50,8 +52,15 @@
       margin-bottom: 5px;
     }
 
+    .locationIcon {
+      color: grey;
+      margin-right: 3px;
+    }
+
     .companyLocation {
       font-size: 12px;
+      color: grey;
+      font-weight: lighter;
     }
   }
 }
