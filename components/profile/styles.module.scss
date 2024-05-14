@@ -1,0 +1,24 @@
+.headerContainerBox {
+  padding: 50px;
+
+  .profilePhoto {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profileHeaderBox {
+    margin-top: 20px;
+  }
+
+  .profileName {
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  .profileJobRole {
+    font-size: 32px;
+    font-weight: 300;
+    color: #683268;
+  }
+
+}
