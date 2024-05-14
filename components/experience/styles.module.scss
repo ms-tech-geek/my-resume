@@ -1,0 +1,69 @@
+.experienceSection {
+  padding: 20px 40px
+}
+
+.expCardBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+  background-color: whitesmoke;
+
+  .companyLogoContainer {
+    display: flex;
+    align-items: center;
+
+    .companyLogo {
+      width: 100%;
+      max-width: initial;
+      min-width: 60px;
+    }
+  }
+
+  .jobDetails {
+    align-items: center;
+
+    .jobTitle {
+      font-size: 14px;
+      font-weight: lighter;
+      color: grey;
+    }
+
+    .companyName {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+
+  .jobDurationLocation {
+    text-align: right;
+
+    .jobDuration {
+      font-size: 14px;
+      font-weight: lighter;
+    }
+
+    .activeJob {
+      background-color: #f4ddf4;
+      border-radius: 5px;
+      width: fit-content;
+      padding: 2px 5px;
+      color: #683268;
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+
+    .locationIcon {
+      color: grey;
+      margin-right: 3px;
+    }
+
+    .companyLocation {
+      font-size: 12px;
+      color: grey;
+      font-weight: lighter;
+    }
+  }
+}
