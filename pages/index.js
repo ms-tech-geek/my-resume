@@ -1,4 +1,5 @@
-import ExperienceSection from '@/components/experienceSection';
+import ExperienceSection from '@/components/experience/experienceSection';
+import SkillsSection from '@/components/skills/skillsSection';
 
 const Home = () => {
   return (
@@ -6,6 +7,7 @@ const Home = () => {
       <div className="col-3"></div>
       <div className="col-9" style={{ padding: '50px' }}>
         <ExperienceSection />
+        <SkillsSection />
       </div>
     </div>
   );
