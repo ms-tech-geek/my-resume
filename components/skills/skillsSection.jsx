@@ -1,3 +1,4 @@
+import SkillCard from '@/components/skills/skillCard';
 import styles from '@/components/skills/styles.module.scss';
 
 const skillsInfo = [
@@ -43,12 +44,7 @@ const SkillsSection = () => {
     <>
       <h2>Skills</h2>
       <div className={styles.skillsSection}>
-        {skillsInfo &&
-          skillsInfo.map((skill) => (
-            <div className={styles.skillCardBox} key={skill}>
-              <span>{skill}</span>
-            </div>
-          ))}
+        {skillsInfo && skillsInfo.map((skill) => <SkillCard skill={skill} />)}
       </div>
     </>
   );
