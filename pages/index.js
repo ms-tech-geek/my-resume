@@ -1,6 +1,7 @@
 import ExperienceSection from '@/components/experience/experienceSection';
 import SkillsSection from '@/components/skills/skillsSection';
 import EducationSection from '@/components/education/educationSection';
+import ProjectSection from '@/components/projects/projectSection';
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
         <ExperienceSection />
         <SkillsSection />
         <EducationSection />
+        <ProjectSection />
       </div>
     </div>
   );
