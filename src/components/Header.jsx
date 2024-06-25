@@ -1,27 +1,99 @@
 import { Link } from 'react-router-dom';
+import '@fortawesome/fontawesome-free/css/all.css';
+import './header.css';
 
 const Header = () => {
   return (
     <header>
-      <nav>
-        <ul>
+      <div className="site-nav mobile-menu-hide">
+        <ul id="nav" className="site-main-menu">
           <li>
-            <Link to="/about-me">About Me</Link>
+            <Link
+              to="/about-me"
+              className="pt-trigger"
+              data-animation="58"
+              data-goto="1"
+            >
+              About Me
+            </Link>
           </li>
           <li>
-            <Link to="/blog">Blog</Link>
+            <Link
+              to="/resume"
+              className="pt-trigger"
+              data-animation="59"
+              data-goto="2"
+            >
+              Resume
+            </Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link
+              to="/portfolio"
+              className="pt-trigger"
+              data-animation="60"
+              data-goto="3"
+            >
+              Portfolio
+            </Link>
           </li>
           <li>
-            <Link to="/portfolio">Portfolio</Link>
+            <Link
+              to="/blog"
+              className="pt-trigger"
+              data-animation="61"
+              data-goto="4"
+            >
+              Blog
+            </Link>
           </li>
           <li>
-            <Link to="/resume">Resume</Link>
+            <Link
+              to="/contact"
+              className="pt-trigger"
+              data-animation="58"
+              data-goto="5"
+            >
+              Contact
+            </Link>
           </li>
         </ul>
-      </nav>
+        {/* /Main menu */}
+
+        {/* Social buttons */}
+        <ul className="social-links">
+          <li>
+            <a className="tip social-button" href="#" title="Twitter">
+              <i className="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a className="tip social-button" href="#" title="Facebook">
+              <i className="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a className="tip social-button" href="#" title="Google Plus">
+              <i className="fa fa-google-plus"></i>
+            </a>
+          </li>
+          <li>
+            <a className="tip social-button" href="#" title="Youtube">
+              <i className="fa fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a className="tip social-button" href="#" title="last.fm">
+              <i className="fa fa-lastfm"></i>
+            </a>
+          </li>
+          <li>
+            <a className="tip social-button" href="#" title="Dribbble">
+              <i className="fa fa-dribbble"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
   );
 };
