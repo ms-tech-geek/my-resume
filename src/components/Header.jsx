@@ -1,6 +1,14 @@
 import { Link } from 'react-router-dom';
-import '@fortawesome/fontawesome-free/css/all.css';
 import './header.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faTwitter,
+  faFacebook,
+  faGooglePlus,
+  faYoutube,
+  faLastfm,
+  faDribbble,
+} from '@fortawesome/free-brands-svg-icons';
 
 const Header = () => {
   return (
@@ -58,38 +66,36 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-        {/* /Main menu */}
 
-        {/* Social buttons */}
         <ul className="social-links">
           <li>
             <a className="tip social-button" href="#" title="Twitter">
-              <i className="fa fa-twitter"></i>
+              <FontAwesomeIcon icon={faTwitter} />
             </a>
           </li>
           <li>
             <a className="tip social-button" href="#" title="Facebook">
-              <i className="fa fa-facebook"></i>
+              <FontAwesomeIcon icon={faFacebook} />
             </a>
           </li>
           <li>
             <a className="tip social-button" href="#" title="Google Plus">
-              <i className="fa fa-google-plus"></i>
+              <FontAwesomeIcon icon={faGooglePlus} />
             </a>
           </li>
           <li>
             <a className="tip social-button" href="#" title="Youtube">
-              <i className="fa fa-youtube"></i>
+              <FontAwesomeIcon icon={faYoutube} />
             </a>
           </li>
           <li>
             <a className="tip social-button" href="#" title="last.fm">
-              <i className="fa fa-lastfm"></i>
+              <FontAwesomeIcon icon={faLastfm} />
             </a>
           </li>
           <li>
             <a className="tip social-button" href="#" title="Dribbble">
-              <i className="fa fa-dribbble"></i>
+              <FontAwesomeIcon icon={faDribbble} />
             </a>
           </li>
         </ul>
