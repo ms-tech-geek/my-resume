@@ -1,0 +1,128 @@
+/* resume.css */
+
+.pt-page {
+  padding: 2rem;
+}
+
+.section-title-block {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.subpage-block {
+  margin-bottom: 2rem;
+}
+
+.block-title h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.timeline {
+  padding-left: 1rem;
+  border-left: 2px solid #ddd;
+  margin-bottom: 2rem;
+}
+
+.timeline-event {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.timeline-event::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #007bff;
+  border-radius: 50%;
+}
+
+.event-date {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.event-name {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.event-description {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.skills-info h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-container {
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.skill-percentage {
+  display: block;
+  height: 10px;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.skill-1 {
+  width: 80%;
+}
+.skill-2 {
+  width: 70%;
+}
+.skill-3 {
+  width: 90%;
+}
+.skill-4 {
+  width: 95%;
+}
+.skill-5 {
+  width: 85%;
+}
+.skill-6 {
+  width: 75%;
+}
+.skill-7 {
+  width: 70%;
+}
+.skill-8 {
+  width: 80%;
+}
+
+.download-cv-block {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.download-cv-block .button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.download-cv-block .button:hover {
+  background-color: #0056b3;
+}
