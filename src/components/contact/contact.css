@@ -1,0 +1,100 @@
+/* contact.css */
+
+.pt-page {
+  padding: 2rem;
+}
+
+.section-title-block {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.subpage-block {
+  margin-bottom: 2rem;
+}
+
+.block-title h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.contact-info-block .ci-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.contact-info-block .ci-text h5 {
+  margin: 0;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-control-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px #007bff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form-control:focus + .form-control-border {
+  opacity: 1;
+}
+
+.form-control-icon {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+.help-block.with-errors {
+  color: #d9534f;
+  margin-top: 0.5rem;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
