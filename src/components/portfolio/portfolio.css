@@ -1,0 +1,82 @@
+/* portfolio.css */
+
+.pt-page {
+  padding: 2rem;
+}
+
+.section-title-block {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.portfolio-filters {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.portfolio-filters li {
+  display: inline-block;
+}
+
+.portfolio-filters .filter {
+  text-decoration: none;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.portfolio-filters .filter:hover,
+.portfolio-filters .filter.active {
+  text-decoration: underline;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.portfolio-grid .item {
+  position: relative;
+  flex-basis: calc(33.333% - 1rem);
+}
+
+.portfolio-grid .item img {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-grid .item div {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.portfolio-grid .item h5 {
+  margin: 0;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.portfolio-grid .item small {
+  display: block;
+  color: #bbb;
+}
+
+.portfolio-grid .item i {
+  color: #fff;
+}
